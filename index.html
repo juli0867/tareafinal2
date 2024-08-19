@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>semana1</title>
+    
+        <style>
+            body{
+  margin: 0;
+  padding: 0;
+    background-color: aqua;
+}
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: start;
+}
+.centrado{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+header, nav, section, aside, footer{
+  padding: 20px;
+  box-sizing: border-box;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+#titulo{
+  text-align: start;
+}
+.hombrenadando{
+  border-radius: 10%;
+  margin-bottom: -30px;
+}
+nav{
+  margin-top: 10px;
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+nav ul li{
+  margin: 0 15px;
+}
+nav ul li a{
+  color: rgb(165, 122, 42);
+  text-decoration: none;
+  padding: 8px 16px;
+  transition: background-color 0.4s;
+}
+nav ul li a:hover{
+  background-color: chocolate;
+  border-radius: 10%;
+}
+main{
+  flex: 1;
+  display: flex;
+  margin-top: 10px;
+}
+section{
+  flex: 2;
+  margin-right: 10px;
+  background-color: coral;
+}
+aside{
+  flex: 1;
+  background-color: yellow;
+}
+.subtitulo1{
+    color: white;
+    font-weight: 100 large;
+}
+#parrafo1{
+    
+ 
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-size: xx-large;
+  font-weight: 700;
+  font-style: normal;
+
+}
+footer{
+  display: flex;
+}
+.gmail{
+  display: flex;
+  position: absolute;
+  padding-left: 550px;
+}
+.gmail img{
+  width: 50px;
+}
+
+        </style>
+    </head>
+    <body>
+   
+    <div class="container">
+        <header>
+            
+            <div class="header">
+                <h1 id="titulo">El mundo de la natación</h1>
+                <div class="contenedor">
+                    <img class="hombrenadando" src="https://www.tiendacompensar.com/ccstore/v1/images/?source=/file/v6290785065449680953/products/id1010.Hombre-nadando-con-aletas.jpg"alt="hombre nadando"width=200px>
+                    <div class="centrado">Nada rapido</div>
+                </div>
+
+            </div>
+            
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./paginas/comienzosdelanatacion.html">Comienzos de la natación</a></li>
+                <li><a href="./paginas/figurasreconocidas.html">Figuras reconocidas de la natación</a></li>
+                <li><a href="./paginas/prendasrecomendadas.html">Prendas recomendadas</a></li>
+                <li><a href="./paginas/guiadeejercicios.html">Guia de ejercicios</a></li>
+            </ul>
+        </nav>
+        <main>
+            
+            
+            <section>
+            <h1 class="subtitulo1">Una lucha una victoria</h1>
+            <article>
+            <p id="parrafo1">Buscamos a personas que quieran explotar su potencial llevando a si su progreso a otro nivel,<br> de esta misma manera apoyamos jovenes de 
+                excasos recursos, para que puedan cumplir sus sueños,<br> asi mismo tambien apoyamos a personas con discapacidad ya que son relegados,<br>
+                y asi poder volver lo imposible posible, con profecionales en el area y equipos de ultima tecnologia,<br> y un material humano 
+                capasitado para lograr los objetivos planteados.</p>
+            </article>
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./img/nadador1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/nadador2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/nadador3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <ul class="list-group">
+                <li class="list-group-item active" aria-current="true">yo active bootstrap con el cdn</li>
+                <li class="list-group-item">busque elementos que quisiera tener en mi pagina</li>
+                <li class="list-group-item">coloque un carrusel</li>
+                <li class="list-group-item">busque imagenes para colocarle al carrusel</li>
+                <li class="list-group-item">coloque un footer de bootstrap</li>
+                <li class="list-group-item">coloque esta lista</li>
+              </ul>
+        </section>
+        <aside>
+            <article> 
+                <h2>Temas que veras en nuestro programa</h2>
+                <ol> 
+                    <li>>
+                        <h1>El desarrollo muscular</h1> 
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Resistencia, fuerza, tinificacion muscular, mejora de la flexibilidad y prevención de lesiones</td>
+                        </tr>
+                    </table>
+                    <li>
+                        <h1>La agilidad en tu cuerpo</h1>
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>De finición de agilidad, eficiencia de movimiento, reacciones rapidas y tecnica mejorada</td>
+                        </tr>
+                    </table>
+                    
+                    <li>
+                        <h1>Desempeño corporal</h1>
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Tecnica de nado, movimiento de brazoz y piernas, respiración y resistencia aeróbica</td>
+                        </tr>
+                    </table>
+                    <li>
+                        <h1>Movimiento en las articulaciones</h1> 
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Eficiencia, rango de movimiento, estiramientos dinamicos, ejercicios de rotación y calentamiento adecuado</td>
+                        </tr>
+                    </table>
+                    <li>
+                        <h1>Tecnicas de nado adecuadas</h1>
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Posición del cuerpo, brazadas, patada, respitación y enfoque en la tecnica</td>
+                        </tr>
+                    </table>
+                    <li>
+                        <h1>Manejo de respiración correcto</h1>
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Respira rapido, giro de cabeza, sincronización, exhalación continua y ejercicios de apnea</td>
+                        </tr>
+                    </table>
+                    <li>
+                        <h1>Buen uso de las implementación deportivas</h1>
+                    </li>
+                    <table>
+                        <tr>
+                            <th>Beneficios</th>
+                        </tr>
+                        <tr>
+                            <td>Habilidades para el buen uso del gorro, gafas, aletas, plaquetas y tablitas</td>
+                        </tr>
+                    </table>
+                </ol>
+            </article>
+        </aside>
+    </main>
+                <footer>
+                    <div class="card">
+                        <h5 class="card-header"></h5>
+                        <div class="card-body">
+                          <h5 class="card-title">Julian David Martínez.</h5>
+                          <p class="card-text">como dato curioso la natación tambien es deporte olimpico</p>
+                          <a href="https://olympics.com/es/paris-2024/deportes/natacion" target="_blank" class="btn btn-primary">descubrelo aqui</a>
+                        </div>
+                      </div>
+                    <div class="gmail">
+                        <img src="./img/gmail.png" alt="gmail">
+                        <h3>jaristizabaljuliann@gmail.com</h3>
+                    </div> 
+                    </footer>
+
+           
+        
+    </div>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>
